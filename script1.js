@@ -62,12 +62,12 @@ if (formContato) {
         try {
             // 1. Preparar dados do formulário
             const formData = {
-                name: this.name.value.trim(),
+                nome: this.nome.value.trim(),
                 email: this.email.value.trim(),
-                phone: this.phone.value.trim() || 'Não informado',
-                business: this.business.value,
-                service: this.service.value,
-                message: this.message.value.trim()
+                telefone: this.telefone.value.trim() || 'Não informado',
+                negocio: this.negocio.value,
+                servico: this.servico.value,
+                mensagem: this.mensagem.value.trim()
             };
 
             // 2. Validação básica
