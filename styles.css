@@ -24,6 +24,7 @@
             --dark: #1A365D;
             --light: #F7FAFC;
             --accent: #4FD1C5;
+            --prime: #525252;
         }
         
         /* Botões */
@@ -116,7 +117,7 @@
         
         /* Hero Section */
         .hero {
-            background-color: var(--primary);
+            background-color: var(--prime);
             color: white;
             padding: 180px 0 100px;
             text-align: center;
