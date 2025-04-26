@@ -80,7 +80,7 @@ if (formContato) {
             submitButton.textContent = "Enviando...";
 
             // 4. Enviar dados pro Google Apps Script
-            const scriptUrl = 'https://script.google.com/macros/s/AKfycbzAydKVJxiAA3fccnfQjQN-jfd9g-8rVcC72VMJxFHv_1uGFRA2Jvor6TFUxzzoKHA3/exec';
+            const scriptUrl = 'https://script.google.com/macros/s/AKfycbxx6uEXUqUt45e6EOgfpXmZsdmeP0Q_oNTz0L1fvuFRaN9D74rxBIEzVlkC9PFfdqVu/exec';
 
             await fetch(scriptUrl, {
                 method: 'POST',
