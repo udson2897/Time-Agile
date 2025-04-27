@@ -1,0 +1,180 @@
+:root {
+    --primary: #000000;
+    --secondary: #dbb725;
+    --dark: #1a1a1a;
+    --light: #f8f8f8;
+    --accent: #dbb725;
+    --prime: #333333;
+    --light-bg: #ffffff;
+    --border: #e0e0e0;
+  }
+  
+  /* Estilos Gerais */
+  body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    line-height: 1.8;
+    color: var(--prime);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: var(--light-bg);
+  }
+  
+  /* Cabeçalho */
+  h1 {
+    color: var(--primary);
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border);
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    position: relative;
+  }
+  
+  h1:after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 2px;
+    background: var(--secondary);
+  }
+  
+  h2 {
+    color: var(--primary);
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+    letter-spacing: 0.3px;
+  }
+  
+  /* Seções */
+  section {
+    background-color: var(--light-bg);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 0;
+    border: 1px solid var(--border);
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  section:hover {
+    border-color: var(--secondary);
+  }
+  
+  /* Texto e Parágrafos */
+  p {
+    margin-bottom: 1.5rem;
+    text-align: left;
+    font-size: 1.05rem;
+  }
+  
+  strong {
+    color: var(--primary);
+    font-weight: 600;
+  }
+  
+  /* Listas */
+  ul {
+    padding-left: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  li {
+    margin-bottom: 0.8rem;
+    position: relative;
+    padding-left: 1.5rem;
+    list-style-type: none;
+    font-size: 1.05rem;
+  }
+  
+  li:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.6em;
+    width: 8px;
+    height: 8px;
+    background: var(--secondary);
+    transform: rotate(45deg);
+  }
+  
+  /* Links */
+  a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 1px;
+  }
+  
+  a:hover {
+    color: var(--primary);
+    border-bottom: 1px solid var(--secondary);
+  }
+  
+  /* Data de vigência */
+  p:first-of-type {
+    text-align: center;
+    color: var(--prime);
+    margin-bottom: 3rem;
+    padding: 1rem;
+    letter-spacing: 0.5px;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+  }
+  
+  /* Seção de contato */
+  section:last-of-type {
+    background-color: var(--light);
+    border: none;
+    border-top: 1px solid var(--secondary);
+    border-bottom: 1px solid var(--secondary);
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    body {
+      padding: 1.5rem;
+    }
+    
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+    }
+    
+    h2 {
+      font-size: 1.4rem;
+    }
+    
+    section {
+      padding: 1.5rem;
+    }
+  }
+  
+  /* Elementos de destaque */
+  .contact-info {
+    padding: 1.5rem;
+  }
+  
+  .contact-info p {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Sofisticação tipográfica */
+  @supports (font-variation-settings: normal) {
+    body {
+      font-family: 'Georgia', serif;
+      font-optical-sizing: auto;
+      font-weight: 350;
+    }
+    
+    h1, h2 {
+      font-variation-settings: 'wght' 450;
+    }
+  }
